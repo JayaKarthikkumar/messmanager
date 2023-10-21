@@ -1,0 +1,45 @@
+.login-main-container {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: #f5f5f5;
+    height: calc(100vh - 93px);
+    /*background-image: url("./assets/img/bg1.jpg");*/
+}
+.img-container {
+    height: 100%;
+    width: 70%;
+}
+.login-container {
+    width: 25%;
+    margin: auto;
+}
+.custom-pl {
+    padding-left: 10px;
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

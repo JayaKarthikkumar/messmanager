@@ -1,0 +1,17 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.add-money {
+    padding: 1% 0;
+    right: 0;
+    display: flex;
+}
+.w-50 {
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+}

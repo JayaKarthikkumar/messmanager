@@ -1,0 +1,15 @@
+<form [formGroup]="addItemOfDayFormGroup">
+
+    <div *ngFor="let interest of item; let i = index">
+        <mat-checkbox (change)="onChange($event)" [value]="interest"><span style="font-size: 14px;">{{interest.item_name}}</span></mat-checkbox>
+    </div>
+
+    <!--<div *ngIf="!item.length">
+        No Item Available !!
+    </div>-->
+
+   
+     <div style="padding-top: 4%;text-align: end;">
+          <button  mat-button (click)="onNoClick()">Cancel</button>
+          <button mat-raised-button color="primary" (click)="addItemofDay()" >Update List</button></div>
+</form>

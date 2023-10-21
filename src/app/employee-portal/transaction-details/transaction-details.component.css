@@ -1,0 +1,11 @@
+table {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  .credit-text {
+    color: green;
+  }
+  .debit-text {
+    color: red;
+  }

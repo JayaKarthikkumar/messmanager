@@ -1,0 +1,63 @@
+<form [formGroup]="editForm" autocomplete="off" novalidate fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+    <mat-card class="cardStyle">
+      <mat-card-content>
+        <div class="example-container">
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" formControlName="name">
+            <mat-hint align="end">Not more then 10 characters long.</mat-hint>
+            <mat-error *ngIf="hasError('name', 'required')">Name is required</mat-error>
+            <mat-error *ngIf="hasError('name', 'maxlength')">You have more than 10 characters</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Username" formControlName="username">
+            <mat-icon matSuffix>person</mat-icon>
+            <mat-hint align="end">Not more then 10 characters long.</mat-hint>
+            <mat-error *ngIf="hasError('username', 'required')">Username is required</mat-error>
+            <mat-error *ngIf="hasError('username', 'maxlength')">You have more than 10 characters</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field style="display:none">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password">
+          </mat-form-field>
+  
+          <mat-form-field>
+            <input type="number" matInput placeholder="Employee ID" formControlName="empId">
+            <mat-error *ngIf="hasError('empId', 'required')">Required</mat-error>
+            <mat-error *ngIf="hasError('empId', 'maxlength')">You have more than 6 characters</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Email ID</mat-label>
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-icon matSuffix>email</mat-icon>
+            <mat-error *ngIf="hasError('email', 'required')">Please enter valid email id.</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-select placeholder="Location" formControlName="location">
+              <mat-option value="Impetus IT Park">Impetus IT Park</mat-option>
+              <mat-option value="Crystal IT Park">CITP</mat-option>
+            </mat-select>
+            <mat-error *ngIf="hasError('location', 'required')">Required</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-select placeholder="Department" formControlName="department">
+              <mat-option value="UX Practice">UX Practice</mat-option>
+              <mat-option value="Neustar">Neustar</mat-option>
+            </mat-select>
+            <mat-error *ngIf="hasError('department', 'required')">Required</mat-error>
+          </mat-form-field>
+        </div>
+  
+        <div mat-dialog-actions>
+          <button mat-button (click)="cancelBtn()">Cancel</button>
+          <button mat-button [disabled]="editForm.invalid" (click)="editUser(editForm.value)" cdkFocusInitial>Edit</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>

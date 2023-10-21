@@ -1,0 +1,78 @@
+<div class="outer-wrapper" *ngIf="showTable">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+  
+    <div>
+      <table mat-table [dataSource]="users" class="mat-elevation-z8">
+  
+        <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+        <!-- Position Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Name</th>
+          <td mat-cell *matCellDef="let element"> {{element.name | titlecase}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="empId">
+          <th mat-header-cell *matHeaderCellDef> Employee ID</th>
+          <td mat-cell *matCellDef="let element"> {{element.empId}} </td>
+        </ng-container>
+  
+        <!-- Name Column -->
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef> Email </th>
+          <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+        </ng-container>
+  
+        <!-- Weight Column -->
+        <ng-container matColumnDef="location">
+          <th mat-header-cell *matHeaderCellDef> Location </th>
+          <td mat-cell *matCellDef="let element"> {{element.location}} </td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="department">
+          <th mat-header-cell *matHeaderCellDef> Department </th>
+          <td mat-cell *matCellDef="let element"> {{element.department}} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="actionColumn">
+          <th mat-header-cell *matHeaderCellDef> Ation Items </th>
+          <td mat-cell *matCellDef="let row; let j=index">
+            <mat-icon class="edit" (click)="editEmployee(row, $event)">edit</mat-icon>
+            <mat-icon class="delete" (click)="deleteEmployee(row, $event)">delete</mat-icon>
+          </td>
+        </ng-container>
+  
+         <!-- Symbol Balance -->
+        <ng-container matColumnDef="balance">
+          <th mat-header-cell *matHeaderCellDef> Balance </th>
+          <td mat-cell *matCellDef="let element">
+            <span *ngIf="element.balance;then thenBlock else elseBlock"> </span>
+            <ng-template #thenBlock> {{element.balance}} /- </ng-template>
+            <ng-template #elseBlock>0 /-</ng-template>
+          </td>
+        </ng-container>
+  
+         <!-- Symbol Add Money -->
+        <ng-container matColumnDef="addMoney">
+          <th mat-header-cell *matHeaderCellDef> Add Money </th>
+          <td class="text-center" mat-cell *matCellDef="let addMoneyRow">
+              <button class="add-money-btn" mat-raised-button color="primary" (click)="addMoney(addMoneyRow)"> Add</button>
+          </td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr class="text-center" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  
+      <mat-paginator class="pagination" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    </div>
+  
+    <div class="addUser">
+      <button mat-fab color="primary" (click)="openDialog()"><mat-icon>add</mat-icon></button>
+    </div>
+  
+  </div>

@@ -1,0 +1,11 @@
+<p>employee-portal works!</p>
+<mat-toolbar color="primary" class="padding">
+    <mat-toolbar-row>
+        <a mat-button routerLink="/employee/viewBalance">View Balance</a>
+        <a mat-button routerLink="/employee/menulist"> Menu list</a>
+        <a mat-button routerLink="/employee/transaction"> Transaction Details </a>
+        <span class="example-spacer"></span>
+        <a class="example-icon" mat-button (click)="logout()"> Logout </a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <router-outlet></router-outlet>

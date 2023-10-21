@@ -1,0 +1,331 @@
+{
+    "users": [
+      {
+        "name": "Pooja",
+        "username": "pooja",
+        "empId": 3691,
+        "email": "pooja@impetus.co.in",
+        "department": "Neustar",
+        "location": "Crystal IT Park",
+        "password": "pooja",
+        "confirmPassword": "pooja",
+        "is_admin": true,
+        "id": 12,
+        "balance": 50,
+        "tranaction_history": [
+          {
+            "username": "pooja",
+            "amount": 50,
+            "type": "credit",
+            "date": "2019-10-03T12:46:28.626Z"
+          }
+        ]
+      },
+      {
+        "name": "John",
+        "username": "John",
+        "empId": 12,
+        "email": "John@gfg",
+        "department": "UX Practice",
+        "location": "Crystal IT Park",
+        "password": "df",
+        "confirmPassword": "df",
+        "is_admin": "",
+        "balance": 200,
+        "tranaction_history": [
+          {
+            "amount": 500,
+            "type": "credit",
+            "date": "2019-09-23T11:53:42.934Z",
+            "username": "df"
+          },
+          {
+            "amount": 200,
+            "type": "credit",
+            "date": "2019-09-30T08:45:04.381Z"
+          }
+        ],
+        "id": 14
+      },
+      {
+        "name": "test",
+        "username": "test",
+        "empId": 123,
+        "email": "test@gmail.com",
+        "department": "Neustar",
+        "location": "Crystal IT Park",
+        "password": "test",
+        "confirmPassword": "test",
+        "is_admin": "",
+        "balance": 459,
+        "tranaction_history": [
+          {
+            "userName": "test",
+            "amount": 100,
+            "type": "credit",
+            "date": "2019-09-19T12:24:43.633Z"
+          },
+          {
+            "userName": "test",
+            "amount": 20,
+            "type": "credit",
+            "date": "2019-09-19T12:26:41.022Z"
+          },
+          {
+            "userName": "test",
+            "amount": 15,
+            "type": "Debit",
+            "date": "2019-09-19T12:43:00.964Z"
+          },
+          {
+            "userName": "test",
+            "amount": 100,
+            "type": "credit",
+            "date": "2019-09-20T11:37:52.430Z"
+          },
+          {
+            "userName": "test",
+            "amount": 15,
+            "type": "Debit",
+            "date": "2019-09-20T11:38:31.339Z"
+          },
+          {
+            "userName": null,
+            "amount": 25,
+            "type": "credit",
+            "date": "2019-09-20T13:20:34.885Z"
+          },
+          {
+            "userName": "test",
+            "amount": 15,
+            "type": "Debit",
+            "date": "2019-09-20T13:20:53.737Z"
+          },
+          {
+            "userName": "test",
+            "amount": 15,
+            "type": "credit",
+            "date": "2019-09-20T13:29:11.132Z"
+          },
+          {
+            "userName": "test",
+            "amount": 20,
+            "type": "credit",
+            "date": "2019-09-20T13:29:41.820Z"
+          },
+          {
+            "userName": "test",
+            "amount": 100,
+            "type": "credit",
+            "date": "2019-09-23T12:28:10.813Z"
+          },
+          {
+            "userName": "test",
+            "amount": 15,
+            "type": "Debit",
+            "date": "2019-09-23T12:28:39.510Z"
+          },
+          {
+            "userName": "test",
+            "amount": 15,
+            "type": "Debit",
+            "date": "2019-10-03T11:10:59.595Z"
+          },
+          {
+            "userName": "test",
+            "amount": 10,
+            "type": "Debit",
+            "date": "2019-10-03T11:11:20.242Z"
+          },
+          {
+            "userName": "test",
+            "amount": 15,
+            "type": "Debit",
+            "date": "2019-10-03T11:13:49.504Z"
+          },
+          {
+            "userName": "test",
+            "amount": 118,
+            "type": "Debit",
+            "date": "2019-10-03T11:32:46.735Z"
+          },
+          {
+            "userName": "test",
+            "amount": 10,
+            "type": "Debit",
+            "date": "2019-10-03T12:12:59.905Z"
+          },
+          {
+            "userName": "test",
+            "amount": 10,
+            "type": "Debit",
+            "date": "2019-10-03T12:13:58.317Z"
+          },
+          {
+            "userName": "test",
+            "amount": 10,
+            "type": "Debit",
+            "date": "2019-10-03T12:14:10.046Z"
+          },
+          {
+            "userName": "test",
+            "amount": 113,
+            "type": "Debit",
+            "date": "2019-10-03T12:20:05.897Z"
+          },
+          {
+            "userName": "test",
+            "amount": 500,
+            "type": "credit",
+            "date": "2019-10-03T12:23:31.707Z"
+          },
+          {
+            "userName": "test",
+            "amount": 10,
+            "type": "Debit",
+            "date": "2019-10-03T12:28:02.905Z"
+          },
+          {
+            "userName": "test",
+            "amount": 10,
+            "type": "Debit",
+            "date": "2019-10-03T12:28:29.359Z"
+          },
+          {
+            "userName": "test",
+            "amount": 0,
+            "type": "Debit",
+            "date": "2019-10-07T08:22:47.631Z"
+          },
+          {
+            "userName": "test",
+            "amount": 10,
+            "type": "Debit",
+            "date": "2019-10-07T08:22:57.960Z"
+          },
+          {
+            "userName": "test",
+            "amount": 15,
+            "type": "Debit",
+            "date": "2019-10-07T08:25:51.079Z"
+          }
+        ],
+        "id": 15
+      },
+      {
+        "name": "abhishek",
+        "username": "abhishek",
+        "empId": 456,
+        "email": "abhi@gmail.com",
+        "department": "Neustar",
+        "location": "Impetus IT Park",
+        "password": "abhishek",
+        "id": 17,
+        "balance": 50,
+        "tranaction_history": [
+          {
+            "amount": 100,
+            "type": "credit",
+            "date": "2019-09-30T08:50:59.943Z"
+          },
+          {
+            "username": "abhishek",
+            "amount": 50,
+            "type": "credit",
+            "date": "2019-10-04T06:17:40.548Z"
+          }
+        ]
+      },
+      {
+        "name": "Ayushi",
+        "username": "ayushi",
+        "empId": 21,
+        "email": "21@h.com",
+        "department": "UX Practice",
+        "location": "Crystal IT Park",
+        "password": "aa",
+        "id": 19,
+        "balance": 100,
+        "tranaction_history": [
+          {
+            "username": "ayushi",
+            "amount": 100,
+            "type": "credit",
+            "date": "2019-10-03T12:47:11.276Z"
+          }
+        ]
+      },
+      {
+        "name": "admin",
+        "username": "admin",
+        "empId": 123,
+        "email": "admin@impetus.co.in",
+        "department": "Neustar",
+        "location": "Impetus IT Park",
+        "password": "admin",
+        "confirmPassword": "admin",
+        "is_admin": true,
+        "balance": 0,
+        "tranaction_history": [],
+        "id": 20
+      }
+    ],
+    "item": [
+      {
+        "id": 1,
+        "item_name": "Mixture",
+        "quantity": 4,
+        "image_src": "assets/img/1.png",
+        "price": 15,
+        "is_item_of_day": true
+      },
+      {
+        "id": 2,
+        "item_name": "Ice Cream",
+        "quantity": 6,
+        "image_src": "assets/img/1.png",
+        "price": 15,
+        "is_item_of_day": true
+      },
+      {
+        "id": 3,
+        "item_name": "Sev",
+        "quantity": 59,
+        "image_src": "assets/img/1.png",
+        "price": 15,
+        "is_item_of_day": true
+      },
+      {
+        "item_name": "Aalu Bhujiya",
+        "quantity": 10,
+        "price": 10,
+        "image_src": "assets/img/1.png",
+        "id": 34,
+        "is_item_of_day": false
+      },
+      {
+        "item_name": "Chatpati Bhujiya1",
+        "quantity": 14,
+        "price": 103,
+        "is_item_of_day": false,
+        "image_src": "assets/img/1.png",
+        "id": 35
+      },
+      {
+        "item_name": "Lays",
+        "quantity": 9,
+        "price": 12,
+        "is_item_of_day": true,
+        "image_src": "assets/img/1.png",
+        "id": 36
+      },
+      {
+        "item_name": "Utappam",
+        "quantity": 50,
+        "price": 20,
+        "is_item_of_day": true,
+        "image_src": "assets/img/1.png",
+        "id": 37
+      }
+    ]
+  }

@@ -1,0 +1,40 @@
+<form [formGroup]="itemAddForm" autocomplete="off" novalidate fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+    <mat-card class="cardStyle">
+      <mat-card-content>
+        <div class="example-container">
+          <!--<mat-form-field style="display:none">
+            <mat-label>Item ID</mat-label>
+            <input type="number" matInput placeholder="id" formControlName="id">
+            <mat-error *ngIf="hasError('id', 'required')">Required</mat-error>
+          </mat-form-field>-->
+  
+          <mat-form-field>
+            <mat-label>Product Name</mat-label>
+            <input matInput placeholder="Product Name" formControlName="item_name">
+            <mat-hint align="end">Not more then 10 characters long.</mat-hint>
+            <mat-error *ngIf="hasError('item_name', 'required')">Required</mat-error>
+            <mat-error *ngIf="hasError('item_name', 'maxlength')">You have more than 25 characters</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Quantity</mat-label>
+            <input type="number" matInput placeholder="Quantity" formControlName="quantity">
+            <mat-error *ngIf="hasError('quantity', 'required')">Required</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Price</mat-label>
+            <input type="number" matInput placeholder="Price" formControlName="price">
+            <mat-error *ngIf="hasError('price', 'required')">Required</mat-error>
+          </mat-form-field>
+          <br>
+          <mat-checkbox formControlName="is_item_of_day">Is Item of the Day?</mat-checkbox>
+        </div>
+  
+        <div mat-dialog-actions>
+          <button mat-button (click)="onNoClick()">Cancel</button>
+          <button mat-raised-button color="primary" [disabled]="itemAddForm.invalid" (click)="addItem(itemAddForm.value)" cdkFocusInitial>Add Item</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>

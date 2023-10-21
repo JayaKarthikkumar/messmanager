@@ -1,0 +1,18 @@
+<!-- admin-portal.component.html -->
+
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <mat-toolbar-row>
+    <span>
+      <a mat-button routerLink="/admin/employee">Manage Employees</a>
+      <a mat-button [matMenuTriggerFor]="item_management">Item Management</a>
+      <mat-menu #item_management="matMenu">
+        <button mat-menu-item routerLink="/admin/item-of-day">Item of The Day</button>
+        <button mat-menu-item routerLink="/admin/masterlist">Master Item List</button>
+      </mat-menu>
+      <a mat-button routerLink="/admin/transaction">Transaction Details</a>
+    </span>
+    <span class="example-spacer"></span>
+    <a class="example-icon" mat-button (click)="logout()">Logout</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
